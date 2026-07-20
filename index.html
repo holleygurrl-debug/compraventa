@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO ON-PAGE Y TÉCNICO -->
+    <title>Compra Y Venta JYD | Vehículos Nuevos y Usados en Santa Marta</title>
+    <meta name="description" content="Compra y venta de vehículos nuevos y usados en Santa Marta, Colombia. Trámites seguros, transparencia y los mejores precios con Compra Y Venta JYD.">
+    <meta name="keywords" content="compra de carros Santa Marta, venta de vehículos usados, autos nuevos Santa Marta, compraventa de vehículos, Compra Y Venta JYD">
+    <meta name="author" content="Marina Esther Sandoval Cantillo">
+    <meta name="robots" content="index, follow">
+    
+    <!-- SEO OFF-PAGE (Open Graph) -->
+    <meta property="og:title" content="Compra Y Venta JYD | Tu próximo vehículo en Santa Marta">
+    <meta property="og:description" content="Encuentra el auto ideal o vende el tuyo con total seguridad y respaldo en Santa Marta.">
+    <meta property="og:type" content="website">
+
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        /* Variables de diseño */
+        :root {
+            --primary-color: #1e3a8a; /* Azul confianza automotriz */
+            --secondary-color: #f97316; /* Naranja acción/CTA */
+            --dark-color: #111827;
+            --text-color: #374151;
+            --bg-light: #f3f4f6;
+            --white: #ffffff;
+        }
+
+        /* Reset y Estilos Globales */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Open Sans', sans-serif; color: var(--text-color); background-color: var(--white); line-height: 1.6; }
+        h1, h2, h3 { font-family: 'Montserrat', sans-serif; color: var(--dark-color); }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        /* Botones / CTA */
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 16px 32px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s;
+            text-align: center;
+        }
+        .btn:hover { background-color: #ea580c; transform: translateY(-2px); }
+
+        /* Header */
+        header { background-color: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 1000; padding: 15px 0; }
+        .header-wrap { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
+        .logo { font-size: 22px; font-weight: 700; color: var(--primary-color); text-transform: uppercase; letter-spacing: 1px; }
+        .logo span { color: var(--secondary-color); }
+        .header-info { font-size: 14px; font-weight: 500; color: var(--dark-color); }
+
+        /* Hero Section */
+        .hero { 
+            background: linear-gradient(to right, rgba(30, 58, 138, 0.9), rgba(17, 24, 39, 0.7)), url('https://images.unsplash.com/photo-1560958089-b8a1929cea89?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+            padding: 100px 20px; 
+            color: var(--white);
+        }
+        .hero-content { max-width: 700px; }
+        .hero h1 { font-size: 3rem; margin-bottom: 20px; color: var(--white); line-height: 1.2; }
+        .hero p { font-size: 1.2rem; margin-bottom: 30px; color: #d1d5db; }
+
+        /* Secciones */
+        .section { padding: 80px 0; }
+        .bg-light { background-color: var(--bg-light); }
+        .section-title { text-align: center; font-size: 2.2rem; margin-bottom: 50px; position: relative; }
+        .section-title::after { content: ''; width: 60px; height: 4px; background: var(--secondary-color); display: block; margin: 15px auto 0; border-radius: 2px; }
+
+        /* Grillas */
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; }
+
+        /* Tarjetas */
+        .card { background: var(--white); padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; border-top: 4px solid var(--primary-color); transition: transform 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .card h3 { font-size: 1.3rem; margin-bottom: 15px; color: var(--primary-color); }
+
+        /* Prueba Social / Transparencia */
+        .trust-banner { background-color: var(--primary-color); color: var(--white); text-align: center; padding: 40px 20px; border-radius: 8px; }
+        .trust-banner h2 { color: var(--white); margin-bottom: 15px; }
+
+        /* Contacto y Formularios */
+        .info-box { background: var(--white); padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .info-box p { margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
+        .info-box strong { color: var(--primary-color); min-width: 100px; display: inline-block; }
+        
+        .form-box { background: var(--white); padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 4px solid var(--secondary-color); }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 600; font-size: 0.95rem; }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 14px; border: 1px solid #d1d5db; border-radius: 6px; font-family: inherit; font-size: 1rem; }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--primary-color); box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1); }
+        .success-msg { display: none; background-color: #dcfce7; color: #166534; padding: 15px; border-radius: 6px; text-align: center; font-weight: 600; margin-top: 20px; border: 1px solid #bbf7d0; }
+
+        /* Footer */
+        footer { background-color: var(--dark-color); color: #9ca3af; padding: 50px 0 20px; text-align: center; }
+        .footer-links { margin-bottom: 30px; }
+        .footer-links a { color: var(--white); margin: 0 15px; text-decoration: none; font-size: 0.9rem; transition: color 0.3s; }
+        .footer-links a:hover { color: var(--secondary-color); }
+        .footer-copy { font-size: 0.85rem; border-top: 1px solid #374151; padding-top: 20px; margin-top: 20px; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .header-wrap { flex-direction: column; text-align: center; }
+            .grid-2 { grid-template-columns: 1fr; }
+            .section { padding: 50px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-wrap">
+            <div class="logo">Compra Y Venta <span>JYD</span></div>
+            <div class="header-info">
+                📞 3145678737 | 📍 Santa Marta, Colombia
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>Tu Vehículo Ideal con Seguridad y Transparencia en Santa Marta</h1>
+                <p>Especialistas en la compraventa de vehículos nuevos y usados. Te acompañamos en todo el proceso para garantizar un trato justo, rápido y legal.</p>
+                <a href="#contacto" class="btn">Cotiza o Vende tu Vehículo Hoy</a>
+            </div>
+        </section>
+
+        <!-- BENEFICIOS -->
+        <section class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">¿Por qué elegir JYD?</h2>
+                <div class="grid-3">
+                    <div class="card">
+                        <h3>Trámites Seguros</h3>
+                        <p>Realizamos el traspaso y toda la gestión documental con estricto apego a las normas de tránsito de Colombia para tu total tranquilidad.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Revisión Rigurosa</h3>
+                        <p>Todos nuestros vehículos usados pasan por un detallado peritaje mecánico y legal antes de ser ofrecidos en nuestro inventario.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Precios Justos</h3>
+                        <p>Valoramos tu vehículo basándonos en los precios reales del mercado (Fasecolda) para ofrecerte la mejor oportunidad de negocio.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICIOS -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Nuestros Servicios</h2>
+                <div class="grid-3">
+                    <div class="card" style="border-top-color: var(--secondary-color);">
+                        <h3>Venta de Autos Nuevos</h3>
+                        <p>Asesoría personalizada para que estrenes el vehículo que se adapta a tus necesidades, familia o negocio, con garantía directa.</p>
+                    </div>
+                    <div class="card" style="border-top-color: var(--secondary-color);">
+                        <h3>Venta de Autos Usados</h3>
+                        <p>Amplio inventario de vehículos de segunda mano en excelentes condiciones, listos para traspaso y sin reportes negativos.</p>
+                    </div>
+                    <div class="card" style="border-top-color: var(--secondary-color);">
+                        <h3>Compramos tu Vehículo</h3>
+                        <p>¿Quieres vender tu auto rápido y seguro? Te ofrecemos una valoración justa y pago ágil sin exponerte a riesgos de seguridad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPROMISO / PRUEBA SOCIAL REAL -->
+        <section class="container" style="margin-bottom: 80px;">
+            <div class="trust-banner">
+                <h2>Nuestro Compromiso en Santa Marta</h2>
+                <p style="font-size: 1.1rem; max-width: 800px; margin: 0 auto;">
+                    En <strong>Compra Y Venta JYD</strong> entendemos que adquirir o vender un vehículo es una decisión financiera importante. Nos caracterizamos por la honestidad en el estado de cada motor, la claridad en el aspecto legal (sin multas ocultas ni embargos) y un trato respetuoso. Trabajamos cada día para que la movilidad de los samarios sea segura.
+                </p>
+            </div>
+        </section>
+
+        <!-- CONTACTO Y TRANSPARENCIA -->
+        <section id="contacto" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Contáctanos y Cotiza</h2>
+                <div class="grid-2">
+                    
+                    <!-- Info Legal y Comercial -->
+                    <div class="info-box">
+                        <h3 style="margin-bottom: 20px; color: var(--primary-color);">Información del Establecimiento</h3>
+                        <p>Para su seguridad y en cumplimiento de las políticas de transparencia comercial, compartimos nuestros datos legales:</p>
+                        <br>
+                        <p><strong>Titular:</strong> Marina Esther Sandoval Cantillo</p>
+                        <p><strong>Razón Social:</strong> Compra Y Venta JYD</p>
+                        <p><strong>Dirección:</strong> Cl. 29e # 30-34, Santa Marta, Colombia</p>
+                        <p><strong>Teléfono:</strong> 3145678737</p>
+                        <p><strong>Correo:</strong> holleygurrl@gmail.com</p>
+                        <p><strong>Horarios:</strong> Lunes a Domingo, 8:00 am - 5:00 pm</p>
+                    </div>
+
+                    <!-- Formulario -->
+                    <div class="form-box">
+                        <h3 style="margin-bottom: 20px;">Envía tu solicitud</h3>
+                        <form id="leadForm">
+                            <div class="form-group">
+                                <label for="nombre">Nombre Completo *</label>
+                                <input type="text" id="nombre" name="nombre" required placeholder="Ej. Carlos Mendoza">
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">Teléfono / WhatsApp *</label>
+                                <input type="tel" id="telefono" name="telefono" required placeholder="Ej. 314 567 8737">
+                            </div>
+                            <div class="form-group">
+                                <label for="servicio">¿Qué necesitas? *</label>
+                                <select id="servicio" name="servicio" required>
+                                    <option value="" disabled selected>Selecciona una opción...</option>
+                                    <option value="comprar">Quiero comprar un vehículo</option>
+                                    <option value="vender">Quiero vender mi vehículo</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensaje">Detalles del vehículo (Marca, Modelo, Año) *</label>
+                                <textarea id="mensaje" name="mensaje" rows="3" required placeholder="Escribe aquí los detalles..."></textarea>
+                            </div>
+                            <button type="submit" class="btn" style="width: 100%;">Solicitar Cotización</button>
+                        </form>
+                        <div id="formMsg" class="success-msg">
+                            ¡Gracias por contactarnos! Hemos recibido tu información y un asesor se comunicará contigo pronto.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="politica-de-privacidad.html">Política de Privacidad</a>
+                <a href="terminos-y-condiciones.html">Términos y Condiciones</a>
+            </div>
+            <p class="footer-copy">
+                &copy; 2024 Compra Y Venta JYD. Propiedad de Marina Esther Sandoval Cantillo. Todos los derechos reservados.<br>
+                Cl. 29e # 30-34, Santa Marta, Colombia.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script de validación simple (Evita redirecciones sospechosas) -->
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault(); 
+            // Oculta el formulario y muestra mensaje de éxito al usuario
+            this.style.display = 'none';
+            document.getElementById('formMsg').style.display = 'block';
+            
+            // Aquí se integraría el código de envío (Fetch/AJAX a tu servidor o webhook)
+        });
+    </script>
+</body>
+</html>
